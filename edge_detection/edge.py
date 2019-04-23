@@ -13,14 +13,17 @@ Usage:
 # Python 2/3 compatibility
 from __future__ import print_function
 
+# built-in module
+import sys
+sys.path.append('../common/')
+
 import cv2 as cv
 import numpy as np
 
 # relative module
 import video
 
-# built-in module
-import sys
+
 
 
 def main():
