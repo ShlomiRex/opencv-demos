@@ -33,6 +33,9 @@ if PY3:
 import numpy as np
 import cv2 as cv
 
+import sys
+sys.path.append('../common/')
+
 # local module
 import video
 from video import presets
