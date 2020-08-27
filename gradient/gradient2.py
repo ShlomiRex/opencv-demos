@@ -2,8 +2,9 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 import os
-img_path = os.sys.argv[1]
-img = cv.imread(img_path,0)
+img = cv.imread("../resources/dave.jpg")
+img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+
 # Output dtype = cv.CV_8U
 sobelx8u = cv.Sobel(img,cv.CV_8U,1,0,ksize=5)
 # Output dtype = cv.CV_64F. Then take its absolute and convert to cv.CV_8U
