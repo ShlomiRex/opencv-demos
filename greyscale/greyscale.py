@@ -1,6 +1,6 @@
 import cv2
   
-image = cv2.imread('C:/Users/N/Desktop/Test.jpg')
+image = cv2.imread("../resources/lenna.png")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
   
 cv2.imshow('Original image',image)
