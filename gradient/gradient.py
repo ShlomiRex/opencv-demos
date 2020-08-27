@@ -1,11 +1,9 @@
 import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
-import os
 
-# Sys
-img_path = os.sys.argv[1]
-img = cv.imread(img_path,0)
+img = cv.imread("../resources/lenna.png")
+img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 # Methods
 laplacian = cv.Laplacian(img,cv.CV_64F)
